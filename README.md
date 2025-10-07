@@ -1,5 +1,7 @@
 # ZymoAssignment
 
+URL: https://br-oc.github.io/zymo_assignment/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 
 ## Development server
