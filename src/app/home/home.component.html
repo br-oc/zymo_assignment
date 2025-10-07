@@ -1,0 +1,77 @@
+<header>
+    <img src="assets/banner-desktop.jpg" alt="Header" class="desktop" />
+    <img src="assets/banner-mobile.jpg" alt="Header" class="mobile" />
+    <img src="assets/banner-tablet.jpg" alt="Header" class="tablet" />
+</header>
+<div class="container">
+    <div class="header-text">
+        <h1 class="header-title">Header Text</h1>
+        <p class="header-description">Lorem ipsum</p>
+    </div>
+
+    <div class="cards">
+        <div class="card" *ngFor="let card of cards">
+            <img [src]="card.image" alt="{{card.title}}" class="card-image" />
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+
+    <div class="action-button-container">
+        <button class="inquire-action-button" (click)="scrollToForm()">Inquire Now</button>
+    </div>
+</div>
+
+<div class="container-text-section">
+    <div class="header-text">
+        <h1 class="header-text-title">Header Text</h1>
+        <p class="header-description">Lorem ipsum</p>
+    </div>
+    
+    <div class="detailed-text-container">
+        <p class="detailed-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et ultrices neque ornare aenean euismod elementum nisi. Aliquet risus feugiat in ante metus dictum. Vestibulum sed arcu non odio euismod. Ornare quam viverra orci sagittis eu. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Amet luctus venenatis lectus magna fringilla urna porttitor. Massa ultricies mi quis hendrerit. Duis convallis convallis tellus id interdum. Diam maecenas ultricies mi eget mauris pharetra et ultrices.
+            <br><br>
+            Lorem ipsum dolor sit amet. Nisi est sit amet facilisis magna etiam tempor. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Amet massa vitae tortor condimentum. Lobortis scelerisque fermentum dui faucibus in ornare. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Morbi tincidunt ornare massa eget egestas. Consequat id porta nibh venenatis cras. Nibh venenatis cras sed felis eget. Fringilla urna porttitor rhoncus dolor purus. Et netus et malesuada fames ac turpis egestas. Diam ut venenatis tellus in metus vulputate.
+        </p>
+    </div>
+</div>
+
+<div class="container-form" id="form-section">
+    <h1>Form</h1>
+    <form>
+        <div class="input-group">
+            <div class="input">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="input">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input">
+                <label for="company">Company*</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+
+            <div class="input">
+                <label for="role">Role*</label>
+                <input type="text" id="role" name="role" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input">
+                <label for="message">Additional Comments</label>
+                <textarea class="comments" id="message" name="message" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="action-button-container">
+            <button class="submit-action-button" type="submit" (click)="submitForm()">Submit</button>
+        </div>
+    </form>
+</div>
