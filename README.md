@@ -2,6 +2,8 @@
 
 URL: https://br-oc.github.io/zymo_assignment/
 
+Development Note: If given more time I would try to fix the layout of the form fields for a cleaner look. As well as adding submission animations instead of using alerts.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 
 ## Development server
